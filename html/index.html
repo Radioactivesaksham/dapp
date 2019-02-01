@@ -1,0 +1,56 @@
+
+<html>
+	<head>
+	<title>Ethereum Dapp</title>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet"> 
+	<link href='C:\Users\saksham\Desktop\dapp\css\style.css' rel='stylesheet'>
+	</head>
+	<body>
+		<div class='container'>
+		<center>D-App Powered by Ethereum.</center>
+		<br>
+		<form>
+			<div class="form-group">
+    		<label for="sender">Sender's wallet address:-</label>
+    		<input type="text" class="form-control" id="sender" aria-describedby="" placeholder=" " required>
+  			</div>
+			<div class="form-group">
+    		<label for="sender">Receiver's wallet address:- </label>
+    		<input type="text" class="form-control" id="receiver"  placeholder=" " required>
+  			</div>
+  			<div class="form-group">
+    		<label for="sender">Ether to be transferred:- </label>
+    		<input type="text" class="form-control" id="receiver"  placeholder=" " required>
+  			</div>
+		</form>	
+	</div>
+	</body>
+
+
+
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js'>
+
+</script>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+  	
+ </script>
+
+<script type="text/javascript">
+		$.getJSON('https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=ETH&convert=USD&CMC_PRO_API_KEY=1e105faf-e77b-438e-b1f6-f950a4bc06ae', function(json)
+		{
+			console.log("JSON Data: " + json)
+		}	
+			)
+
+	</script>
+
+</html>
+
+
+
